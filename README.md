@@ -28,7 +28,7 @@ Typically the library will be installed in /usr/local/lib.
 
 ==Notes==
 
-The project is functional but unit testing is incomplete. I just didn't have enough free time available. Sorry.
+The project is functional but unit testing is incomplete. I just didn't have enough free time available.
 The client/server "determine if prime" functionality is all there (if a little bare bones).
 I used the ZeroMQ destributed messaging library because it's just about the coolest thing ever.
 It's overkill here but this was a good excuse to play with it and I'd use it again.
