@@ -4,7 +4,7 @@ Client/server application to test the primality of an unsigned integer. The clie
 
 ==Quick Setup==
 
-Client
+=Client=
 
 g++ -Wall client.cpp -o client -std=c++11 -L/usr/local/lib -lzmq
 
@@ -13,7 +13,7 @@ g++ -Wall client.cpp -o client -std=c++11 -L/usr/local/lib -lzmq
     -p <port> server port (default = 5555)
     -n <number> number to test
 
-Server
+=Server=
 
 g++ -Wall server.cpp -o server -std=c++11 -L/usr/local/lib -lzmq -lpthread
 
@@ -26,7 +26,7 @@ Both require the ZeroMQ library available at http://zeromq.org/
 Typically the library will be installed in /usr/local/lib.
 
 
-Notes
+==Notes==
 
 The project is functional but unit testing is incomplete. I just didn't have enough free time available. Sorry.
 The client/server "determine if prime" functionality is all there (if a little bare bones).
