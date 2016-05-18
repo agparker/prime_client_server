@@ -8,18 +8,18 @@ Client/server application to test the primality of an unsigned integer. The clie
 
 g++ -Wall client.cpp -o client -std=c++11 -L/usr/local/lib -lzmq
 
-  Usage: client [OPTION...]
-    -s <server> ipv4 address of server, or localhost (default = localhost)
-    -p <port> server port (default = 5555)
-    -n <number> number to test
+Usage: client [OPTION...]
+-s <server> ipv4 address of server, or localhost (default = localhost)
+-p <port> server port (default = 5555)
+-n <number> number to test
 
 =Server=
 
 g++ -Wall server.cpp -o server -std=c++11 -L/usr/local/lib -lzmq -lpthread
 
 Usage: server [OPTION...]
-  -p <port> port (default = 5555)
-  -t <threads> number of worker threads
+	-p <port> port (default = 5555)
+	-t <threads> number of worker threads
 
 Both require the ZeroMQ library available at http://zeromq.org/
 
