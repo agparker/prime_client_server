@@ -38,9 +38,11 @@ With regards to unit testing and coverage I've attempted to show the test approa
 prime_test.cpp uses the Google Test framework to do some simple unit tests on the PrimeCandidate class defined in prime.hpp
 
 Compile with something similar to:
-	g++ -Wall prime_test.cpp -o prime_test -std=c++11 -L/usr/local/lib -lgtest -lpthread -I/path/to/googletest/include/
+
+g++ -Wall prime_test.cpp -o prime_test -std=c++11 -L/usr/local/lib -lgtest -lpthread -I/path/to/googletest/include/
 
 mock-client.cpp and request_reply_interface.hpp are an attempt to create a mock using Google Mock for the client's interface to the server. Needs work.
 
 Compile with something similar to:
-	g++ -Wall mock-client.cpp -o mock_client -L/usr/local/lib -lgmock -lzmq -lpthread -I/path/to/googlemock/include/ -I/path/to/googletest/include/
+
+g++ -Wall mock-client.cpp -o mock_client -L/usr/local/lib -lgmock -lzmq -lpthread -I/path/to/googlemock/include/ -I/path/to/googletest/include/
